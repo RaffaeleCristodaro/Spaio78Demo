@@ -64,11 +64,6 @@
 		{
 			"Name": "OptionalMobileFeaturesBPLibrary",
 			"Enabled": true
-		},
-		{
-			"Name": "AzSpeech",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/94ad3e51c6f443718cdb312b48742bb3"
 		}
 	],
 	"TargetPlatforms": [
