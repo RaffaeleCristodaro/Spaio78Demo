@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Speech To Life Vosk plugin additions-->
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- init section is always evaluated once per architecture -->
+	<init>
+		<log text="Speech To Life Vosk init"/>
+	</init>
+
+	<!-- Copy the lib -->
+	<resourceCopies>
+		<log text="Copying libvosk.so"/>
+		<copyFile src="$S(AbsPluginDir)/../../../Source/ThirdParty/vosk/bin/android/$S(Architecture)/libvosk.so"
+				  dst="$S(BuildDir)/libs/$S(Architecture)/libvosk.so" />
+
+	</resourceCopies>
+    
+    <!-- ensure loading the lib -->
+	<soLoadLibrary>
+		<loadLibrary name="libvosk" failmsg="libvosk library not loaded and required!" />
+	</soLoadLibrary>
+</root>

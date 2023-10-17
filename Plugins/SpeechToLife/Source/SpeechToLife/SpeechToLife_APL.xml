@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Speech To Life plugin additions-->
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- init section is always evaluated once per architecture -->
+	<init>
+	</init>
+	
+	<gameActivityClassAdditions>
+		<insert>
+public native void nativeSpeechToLifeSetNoBackupFilesDir(boolean isValid, String noBackupFilesDir);
+		</insert>
+	</gameActivityClassAdditions>
+
+	<gameActivityOverrideAPKOBBPackaging>
+		<insert>
+<![CDATA[
+		// SpeechToLife Additions
+		if (ANDROID_BUILD_VERSION >= 21)
+		{
+			Log.debug("SpeechToLife Setting NoBackupFilesDir: " + getNoBackupFilesDir().getPath());
+			nativeSpeechToLifeSetNoBackupFilesDir(true, getNoBackupFilesDir().getPath());
+		}
+		else
+		{
+			Log.debug("SpeechToLife android version less than 21, defaulting NoBackupFilesDir: " + getFilesDir().getPath());
+			nativeSpeechToLifeSetNoBackupFilesDir(false, getFilesDir().getPath());
+		}
+		// END SpeechToLife Additions
+]]>
+		</insert>
+	</gameActivityOverrideAPKOBBPackaging>
+</root>

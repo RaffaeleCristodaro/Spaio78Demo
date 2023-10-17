@@ -1,0 +1,60 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.6",
+	"FriendlyName": "Speech To Life",
+	"Description": "Speech Recognition for Unreal Engine",
+	"Category": "Speech Recognition",
+	"CreatedBy": "Solar Storm Interactive",
+	"CreatedByURL": "https://github.com/SolarStormInteractive",
+	"DocsURL": "https://github.com/SolarStormInteractive/SpeechToLife_Docs/wiki",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/1f24b827dd4c44a99aa2c9eda2d73479",
+	"SupportURL": "https://discord.gg/zBXM6VC4r8",
+	"EngineVersion": "5.1.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"SupportedTargetPlatforms": [
+		"Win64",
+		"Android"
+	],
+	"Modules": [
+		{
+			"Name": "SpeechToLife",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Android"
+			]
+		},
+		{
+			"Name": "SpeechToLifeVosk",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Android"
+			],
+			"AdditionalDependencies": [
+				"SpeechToLife"
+			]
+		},
+		{
+			"Name": "SpeechToLifeEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			],
+			"AdditionalDependencies": [
+				"SpeechToLife"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "AudioCapture",
+			"Enabled": true
+		}
+	]
+}
