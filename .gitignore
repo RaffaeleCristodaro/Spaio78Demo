@@ -75,3 +75,6 @@ DerivedDataCache/*
 
 # Folder for GitIgnore
 Content/GitIgnore/*
+
+# Folder for Plugins
+Plugins/*
