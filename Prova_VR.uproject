@@ -82,6 +82,11 @@
 		{
 			"Name": "HairStrands",
 			"Enabled": true
+		},
+		{
+			"Name": "GoogleTTS",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/ac356796e56444b5a86f198c75abd895"
 		}
 	],
 	"TargetPlatforms": [
