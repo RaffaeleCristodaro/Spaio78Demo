@@ -87,6 +87,11 @@
 			"Name": "GoogleTTS",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/ac356796e56444b5a86f198c75abd895"
+		},
+		{
+			"Name": "HTTPJsonUtility",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/1c2307df1b824376a29d1a4322ed107b"
 		}
 	],
 	"TargetPlatforms": [
