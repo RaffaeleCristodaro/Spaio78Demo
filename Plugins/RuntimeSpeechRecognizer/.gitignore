@@ -1,8 +1,0 @@
-# Compiled source files for the engine to use
-/Intermediate/
-
-# Binary files
-/Binaries/
-
-# Content folder, because it contains language models that are too large
-/Content/
