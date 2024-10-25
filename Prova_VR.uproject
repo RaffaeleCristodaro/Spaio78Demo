@@ -20,12 +20,12 @@
 		},
 		{
 			"Name": "RuntimeSpeechRecognizer",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/2b33311abdb048819664a6cfe0bbd90d"
 		},
 		{
 			"Name": "RuntimeAudioImporter",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/81fd278e318e4235a028d3fdf46bf036"
 		},
 		{
@@ -92,6 +92,15 @@
 			"Name": "HTTPJsonUtility",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/1c2307df1b824376a29d1a4322ed107b"
+		},
+		{
+			"Name": "AIIntegrationToolkit",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/59265de098f24b039b21a13856f221db"
+		},
+		{
+			"Name": "OpenAIAPI",
+			"Enabled": false
 		}
 	],
 	"TargetPlatforms": [
